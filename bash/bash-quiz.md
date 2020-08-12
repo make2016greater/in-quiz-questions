@@ -499,7 +499,17 @@ echo $greeting, everybody!
 
 #### Q48. Using Bash extended globbing, what will be the output of this command? 
 
-##### *code missing*
+```bash
+$ ls -1
+apple
+banana
+bananapple
+banpple
+pineapple
+strawberry
+$ shopt -s extglob
+$ ls -1 @(ba*(na) |a+(p)le)
+```
 
 - [ ] a
 ```bash
